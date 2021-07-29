@@ -18,9 +18,9 @@ RUN set -x \
     # && apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/' \
     # && apt-get update -qy \
     # && apt-get install --install-recommends -qfy $WINE_VERSION \
-    && wget -nv https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/xUbuntu_18.04/Release.key -O Release.key \
+    && wget -nv https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/xUbuntu_20.04/Release.key -O Release.key \
     && apt-key add - < Release.key \
-    && apt-add-repository 'deb https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/xUbuntu_18.04/ ./' \
+    && apt-add-repository 'deb https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/xUbuntu_20.04/ ./' \
     && apt-get update -qy \
     && apt install --install-recommends -qfy $WINE_VERSION \
     && apt-get clean \
