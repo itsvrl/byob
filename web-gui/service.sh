@@ -8,6 +8,6 @@ cd $CURRENT_DIR/web-gui/docker-pyinstaller \
 ; docker build -f Dockerfile-py3-i386 -t nix-i386 .  \
 ; docker build -f Dockerfile-py3-win32 -t win-x32 .
 # Run app
-cd $CURRENT_DIR
+cd $CURRENT_DIR/web-gui
 echo "BYOB WebGUI should now be available on: $HOSTNAME.local:5000"
 python3 run.py
