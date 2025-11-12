@@ -1,11 +1,13 @@
 # Files
 *.db
 *.pyc
+.env
 
 # Directories
 venv/
 byob/data/
 byob/modules/clients/
+.vscode
 
 # Test configs
 .coveralls.yaml
